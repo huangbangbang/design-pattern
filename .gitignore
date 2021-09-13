@@ -19,6 +19,7 @@ local.properties
 
 ##----------idea----------
 *.iml
+target/
 .idea/
 *.ipr
 *.iws
