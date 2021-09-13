@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="stu" class="com.bj.springframework5Ioc.Stu">
+        <property name="course" >
+            <array >
+                <value>java</value>
+                <value>database</value>
+                <value>c++</value>
+            </array>
+        </property>
+
+        <property name="list" >
+            <list >
+                <value>jack</value>
+                <value>base</value>
+                <value>c</value>
+            </list>
+        </property>
+
+        <property name="map" >
+            <map>
+                <entry key="java" value="jack"></entry>
+                <entry key="java1" value="jack"></entry>
+                <entry key="java2" value="jack"></entry>
+            </map>
+        </property>
+
+        <property name="set" >
+            <set>
+                <value>jack</value>
+                <value>base</value>
+                <value>c</value>
+            </set>
+        </property>
+
+        <property name="courseList" >
+            <list >
+                <ref bean="course1"></ref>
+                <ref bean="course2"></ref>
+                <ref bean="course3"></ref>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="course1" class="com.bj.springframework5Ioc.Course">
+        <property name="name" value="java"></property>
+    </bean>
+
+    <bean id="course2" class="com.bj.springframework5Ioc.Course">
+        <property name="name" value="c++"></property>
+    </bean>
+
+    <bean id="course3" class="com.bj.springframework5Ioc.Course">
+        <property name="name" value="python"></property>
+    </bean>
+
+</beans>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="user" class="com.bj.springframework5Ioc.User" >
+        <!--<property name="name" value="jack"></property>-->
+        <!--<constructor-arg name="name" value="mary"></constructor-arg>-->
+
+        <!--<property name="name" >
+            <null/>
+        </property>-->
+
+        <!--<property name="name" value="<<jack>>"></property>-->
+
+        <property name="name" >
+            <value><![CDATA[<<jack>>]]></value>
+        </property>
+    </bean>
+
+</beans>

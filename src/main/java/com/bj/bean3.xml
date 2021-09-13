@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--<bean id="emp" class="com.bj.springframework5Ioc.bean.Emp">
+        <property name="name" value="jack"></property>
+        <property name="age" value="11"></property>
+        <property name="dept">
+            <bean id="dept" class="com.bj.springframework5Ioc.bean.Dept">
+                <property name="name" value="security"></property>
+            </bean>
+        </property>
+    </bean>-->
+
+    <!--<bean id="emp" class="com.bj.springframework5Ioc.bean.Emp">
+        <property name="name" value="jack"></property>
+        <property name="age" value="11"></property>
+        <property name="dept" ref="dept"></property>
+    </bean>
+
+    <bean id="dept" class="com.bj.springframework5Ioc.bean.Dept">
+        <property name="name" value="security"></property>
+    </bean>-->
+
+    <bean id="emp" class="com.bj.springframework5Ioc.bean.Emp">
+        <property name="name" value="jack"></property>
+        <property name="age" value="11"></property>
+        <property name="dept" ref="dept"></property>
+        <property name="dept.name" value="technology"></property>
+    </bean>
+
+    <bean id="dept" class="com.bj.springframework5Ioc.bean.Dept">
+        <property name="name" value="security"></property>
+    </bean>
+
+</beans>
